@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Source / extension problems (Suwayomi-Server)
+    url: https://github.com/Suwayomi/Suwayomi-Server/issues
+    about: Sources, extensions, and "this manga won't load/download" are handled by the server, not Tsumiru.
+  - name: Documentation & setup
+    url: https://tsumiru-app.github.io/docs/guides/getting-started
+    about: How to connect Tsumiru to your Suwayomi server, plus FAQs and troubleshooting.

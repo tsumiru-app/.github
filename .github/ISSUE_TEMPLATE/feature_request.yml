@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an idea or improvement for Tsumiru
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion!
+
+        Note: adding or changing **sources/extensions** is handled by your Suwayomi server, not Tsumiru.
+        This is for app features (reader, library, settings, UI, platform support).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the problem or limitation you're hitting, not just the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like Tsumiru to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you thought about.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: This is an app feature, not a source/extension request (those belong to Suwayomi-Server).
+          required: true

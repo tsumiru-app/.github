@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a problem with the Tsumiru app
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug!
+
+        **Before you start:** sources and extensions live on your Suwayomi server, not in Tsumiru.
+        If a source is broken or a chapter won't load/download, please report it to
+        [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) instead. This tracker is
+        for the app itself (reader, library, settings, connection/auth, platform builds).
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, and what happened?
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: input
+    id: tsumiru-version
+    attributes:
+      label: Tsumiru version
+      placeholder: e.g. v0.4.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Android, Windows, macOS, Linux, Web]
+    validations:
+      required: true
+  - type: input
+    id: server-version
+    attributes:
+      label: Suwayomi server version
+      placeholder: e.g. v1.x.x / preview rXXXX
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Any relevant logs, error messages, or screenshots.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: This is an issue with the Tsumiru app, not with a source/extension (those belong to Suwayomi-Server).
+          required: true
